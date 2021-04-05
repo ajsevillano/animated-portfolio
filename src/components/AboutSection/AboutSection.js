@@ -1,4 +1,4 @@
-import home1 from '../../assets/img/home1';
+import home1 from '../../assets/img/home1.png';
 
 const AboutSection = () => {
   return (
