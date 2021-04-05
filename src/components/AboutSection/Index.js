@@ -13,7 +13,7 @@ const AboutSection = () => {
           </div>
           <div className="hide">
             <h2>
-              Your <span>dreams</span>come
+              Your <span>dreams</span> come
             </h2>
           </div>
           <div className="hide">
