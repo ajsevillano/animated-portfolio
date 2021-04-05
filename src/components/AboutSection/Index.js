@@ -1,8 +1,11 @@
 import home1 from '../../assets/img/home1.png';
 
+//Styles
+import styled from 'styled-components';
+
 const AboutSection = () => {
   return (
-    <div>
+    <StyledAbout>
       <div className="description">
         <div className="title">
           <div className="hide">
@@ -24,8 +27,17 @@ const AboutSection = () => {
         <button>Contact us</button>
       </div>
       <img src={home1} alt="guy with camera" />
-    </div>
+    </StyledAbout>
   );
 };
+
+const StyledAbout = styled.div`
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5rem 10rem;
+  color: white;
+`;
 
 export default AboutSection;
