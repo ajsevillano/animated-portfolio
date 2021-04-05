@@ -1,7 +1,13 @@
-import AboutSection from '../components/AboutSection/AboutSection';
+import AboutSection from '../components/AboutSection/Index';
+import ServicesSection from '../components/ServicesSection/Index';
 
 const AboutUs = () => {
-  return <AboutSection />;
+  return (
+    <>
+      <AboutSection />
+      <ServicesSection />
+    </>
+  );
 };
 
 export default AboutUs;
