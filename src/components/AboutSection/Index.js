@@ -6,7 +6,7 @@ import styled from 'styled-components';
 const AboutSection = () => {
   return (
     <StyledAbout>
-      <div className="description">
+      <StyledDescription>
         <div className="title">
           <div className="hide">
             <h2>We work to make</h2>
@@ -25,7 +25,7 @@ const AboutSection = () => {
           We have professionals with amazing skills to help you achive it.
         </p>
         <button>Contact us</button>
-      </div>
+      </StyledDescription>
       <img src={home1} alt="guy with camera" />
     </StyledAbout>
   );
@@ -38,6 +38,14 @@ const StyledAbout = styled.div`
   justify-content: space-between;
   padding: 5rem 10rem;
   color: white;
+`;
+
+const StyledDescription = styled.div`
+  flex: 1;
+  padding-right: 5rem;
+  h2 {
+    font-weight: lighter;
+  }
 `;
 
 export default AboutSection;
