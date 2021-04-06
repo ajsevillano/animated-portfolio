@@ -26,7 +26,9 @@ const AboutSection = () => {
         </p>
         <button>Contact us</button>
       </StyledDescription>
-      <img src={home1} alt="guy with camera" />
+      <StyledImage>
+        <img src={home1} alt="guy with camera" />
+      </StyledImage>
     </StyledAbout>
   );
 };
@@ -45,6 +47,15 @@ const StyledDescription = styled.div`
   padding-right: 5rem;
   h2 {
     font-weight: lighter;
+  }
+`;
+
+const StyledImage = styled.div`
+  flex: 1;
+  img {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
   }
 `;
 
