@@ -8,17 +8,17 @@ const AboutSection = () => {
     <StyledAbout>
       <StyledDescription>
         <div className="title">
-          <div className="hide">
+          <StyledHide>
             <h2>We work to make</h2>
-          </div>
-          <div className="hide">
+          </StyledHide>
+          <StyledHide>
             <h2>
               Your <span>dreams</span> come
             </h2>
-          </div>
-          <div className="hide">
+          </StyledHide>
+          <StyledHide>
             <h2>true.</h2>
-          </div>
+          </StyledHide>
         </div>
         <p>
           Contact us for a any photography or videography ideas that you have.
@@ -52,11 +52,16 @@ const StyledDescription = styled.div`
 
 const StyledImage = styled.div`
   flex: 1;
+  overflow: hidden;
   img {
     width: 100%;
     height: 80vh;
     object-fit: cover;
   }
+`;
+
+const StyledHide = styled.div`
+  overflow: hidden;
 `;
 
 export default AboutSection;
