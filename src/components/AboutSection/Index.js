@@ -2,7 +2,7 @@ import home1 from '../../assets/img/home1.png';
 
 //Styles
 import {
-  StyledAbout,
+  StyledLayout,
   StyledDescription,
   StyledImage,
   StyledHide,
@@ -10,7 +10,7 @@ import {
 
 const AboutSection = () => {
   return (
-    <StyledAbout>
+    <StyledLayout>
       <StyledDescription>
         <div className="title">
           <StyledHide>
@@ -34,7 +34,7 @@ const AboutSection = () => {
       <StyledImage>
         <img src={home1} alt="guy with camera" />
       </StyledImage>
-    </StyledAbout>
+    </StyledLayout>
   );
 };
 
