@@ -1,12 +1,12 @@
 //Import Images
-import athlete from './img/athlete-small.png';
-import goodtimes from './img/goodtimes-small.png';
-import theracer from './img/theracer-small.png';
-import athlete2 from './img/athlete2.png';
-import goodtimes2 from './img/good-times2.jpg';
-import theracer2 from './img/the-racer2.jpg';
+import athlete from './assets/img/athlete-small.png';
+import goodtimes from './assets/img/goodtimes-small.png';
+import theracer from './assets/img/theracer-small.png';
+import athlete2 from './assets/img/athlete2.png';
+import goodtimes2 from './assets/img/good-times2.jpg';
+import theracer2 from './assets/img/the-racer2.jpg';
 
-export const MovieData = () => {
+const MovieData = () => {
   return [
     {
       title: 'The Athlete',
@@ -79,3 +79,5 @@ export const MovieData = () => {
     },
   ];
 };
+
+export default MovieData;

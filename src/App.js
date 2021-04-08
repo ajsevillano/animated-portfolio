@@ -3,6 +3,7 @@ import AboutUs from './pages/AboutUs';
 import ContactUs from './pages/ContactUs';
 import OurWork from './pages/OurWork';
 import Navigation from './components/Navigation/Index';
+import MovieDetails from './pages/MovieDetails';
 
 //Global styled
 import GlobalStyle from './components/GlobalStyled';
@@ -21,6 +22,9 @@ function App() {
         </Route>
         <Route path="/work">
           <OurWork />
+          <Route path="/work/:id">
+            <MovieDetails />
+          </Route>
         </Route>
         <Route path="/contact">
           <ContactUs />
