@@ -48,7 +48,7 @@ const ServicesSection = () => {
         </StyledCards>
       </StyledDescription>
       <StyledImage>
-        <img src={home2} alt="" srcset="" />
+        <img src={home2} alt="" />
       </StyledImage>
     </StyledServices>
   );

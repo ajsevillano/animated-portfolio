@@ -20,11 +20,11 @@ function App() {
         <Route exact path="/">
           <AboutUs />
         </Route>
-        <Route path="/work">
+        <Route path="/work" exact>
           <OurWork />
-          <Route path="/work/:id">
-            <MovieDetails />
-          </Route>
+        </Route>
+        <Route path="/work/:id">
+          <MovieDetails />
         </Route>
         <Route path="/contact">
           <ContactUs />
