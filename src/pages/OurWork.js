@@ -15,7 +15,12 @@ import { pageAnimation } from '../utils/animations';
 
 const OurWork = () => {
   return (
-    <StyledOurWork variants={pageAnimation} initial="hidden" animate="show">
+    <StyledOurWork
+      variants={pageAnimation}
+      initial="hidden"
+      animate="show"
+      exit="exit"
+    >
       <StyledMovie>
         <h2>The athlete</h2>
         <div className="line"></div>
