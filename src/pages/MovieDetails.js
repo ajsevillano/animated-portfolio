@@ -32,6 +32,9 @@ const MovieDetails = () => {
               />
             ))}
           </StyledAwards>
+          <ImageDisplay>
+            <img src={movie.secondaryImg} alt="secundary picture" />
+          </ImageDisplay>
         </StyledDetails>
       )}
     </>
@@ -64,6 +67,15 @@ const StyledAwards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
+`;
+
+const ImageDisplay = styled.div`
+  min-height: 50vh;
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 `;
 
 export default MovieDetails;
