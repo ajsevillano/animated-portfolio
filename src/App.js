@@ -11,25 +11,30 @@ import GlobalStyle from './components/GlobalStyled';
 //Router
 import { Switch, Route } from 'react-router-dom';
 
+//Animation
+import { AnimatePresence } from 'framer-motion';
+
 function App() {
   return (
     <div className="App">
       <GlobalStyle />
       <Navigation />
-      <Switch>
-        <Route exact path="/">
-          <AboutUs />
-        </Route>
-        <Route path="/work" exact>
-          <OurWork />
-        </Route>
-        <Route path="/work/:id">
-          <MovieDetails />
-        </Route>
-        <Route path="/contact">
-          <ContactUs />
-        </Route>
-      </Switch>
+      <AnimatePresence>
+        <Switch>
+          <Route exact path="/">
+            <AboutUs />
+          </Route>
+          <Route path="/work" exact>
+            <OurWork />
+          </Route>
+          <Route path="/work/:id">
+            <MovieDetails />
+          </Route>
+          <Route path="/contact">
+            <ContactUs />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </div>
   );
 }
