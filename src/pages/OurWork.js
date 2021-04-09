@@ -9,9 +9,13 @@ import athlete from '../assets/img/athlete-small.png';
 import theracer from '../assets/img/theracer-small.png';
 import goodtimes from '../assets/img/goodtimes-small.png';
 
+//Animations
+import { motion } from 'framer-motion';
+import { pageAnimation } from '../utils/animations';
+
 const OurWork = () => {
   return (
-    <StyledOurWork>
+    <StyledOurWork variants={pageAnimation} initial="hidden" animate="show">
       <StyledMovie>
         <h2>The athlete</h2>
         <div className="line"></div>
@@ -37,7 +41,7 @@ const OurWork = () => {
   );
 };
 
-const StyledOurWork = styled.div`
+const StyledOurWork = styled(motion.div)`
   min-height: 100vh;
   overflow: hidden;
   padding: 5rem 10rem;
