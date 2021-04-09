@@ -28,7 +28,24 @@ const MovieDetails = () => {
   );
 };
 
-const StyledDetails = styled.div``;
-const HeadLine = styled.div``;
+const StyledDetails = styled.div`
+  color: white;
+`;
+const HeadLine = styled.div`
+  min-height: 90vh;
+  padding-top: 20vh;
+  position: relative;
+  h2 {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -10%);
+  }
+  img {
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+  }
+`;
 
 export default MovieDetails;
