@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
 import MovieData from '../MovieData';
+import Award from '../components/Award/Index';
 
 const MovieDetails = () => {
   const History = useHistory();
@@ -22,6 +23,15 @@ const MovieDetails = () => {
             <h2>{movie.title}</h2>
             <img src={movie.mainImg} alt="" />
           </HeadLine>
+          <StyledAwards>
+            {movie.awards.map((award) => (
+              <Award
+                title={award.title}
+                description={award.description}
+                key={award.title}
+              />
+            ))}
+          </StyledAwards>
         </StyledDetails>
       )}
     </>
@@ -46,6 +56,14 @@ const HeadLine = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+`;
+
+const StyledAwards = styled.div`
+  min-height: 80vh;
+  display: flex;
+  margin: 5rem 10rem;
+  align-items: center;
+  justify-content: space-around;
 `;
 
 export default MovieDetails;
