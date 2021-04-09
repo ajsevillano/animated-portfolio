@@ -16,6 +16,9 @@ import {
   StyledHide,
 } from '../../styles';
 
+//Components
+import Wave from '../../components/Wave';
+
 const AboutSection = () => {
   return (
     <StyledLayout>
@@ -46,6 +49,7 @@ const AboutSection = () => {
           alt="guy with camera"
         />
       </StyledImage>
+      <Wave />
     </StyledLayout>
   );
 };
