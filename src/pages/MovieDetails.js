@@ -33,7 +33,7 @@ const MovieDetails = () => {
             ))}
           </StyledAwards>
           <ImageDisplay>
-            <img src={movie.secondaryImg} alt="secundary picture" />
+            <img src={movie.secondaryImg} alt="secundary" />
           </ImageDisplay>
         </StyledDetails>
       )}

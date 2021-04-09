@@ -1,5 +1,8 @@
 import home1 from '../../assets/img/home1.png';
 
+//Framer Motion
+import { motion } from 'framer-motion';
+
 //Styles
 import {
   StyledLayout,
@@ -12,19 +15,19 @@ const AboutSection = () => {
   return (
     <StyledLayout>
       <StyledDescription>
-        <div className="title">
+        <motion.div>
           <StyledHide>
-            <h2>We work to make</h2>
+            <motion.h2>We work to make</motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>
+            <motion.h2>
               Your <span>dreams</span> come
-            </h2>
+            </motion.h2>
           </StyledHide>
           <StyledHide>
-            <h2>true.</h2>
+            <motion.h2> true.</motion.h2>
           </StyledHide>
-        </div>
+        </motion.div>
         <p>
           Contact us for a any photography or videography ideas that you have.
           We have professionals with amazing skills to help you achive it.
