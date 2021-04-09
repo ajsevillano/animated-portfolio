@@ -2,7 +2,11 @@ import home1 from '../../assets/img/home1.png';
 
 //Framer Motion
 import { motion } from 'framer-motion';
-import { titleAnimation, fadeAnimation } from '../../utils/animations';
+import {
+  titleAnimation,
+  fadeAnimation,
+  photoAnimation,
+} from '../../utils/animations';
 
 //Styles
 import {
@@ -36,7 +40,11 @@ const AboutSection = () => {
         <motion.button variants={fadeAnimation}>Contact us</motion.button>
       </StyledDescription>
       <StyledImage>
-        <img src={home1} alt="guy with camera" />
+        <motion.img
+          variants={photoAnimation}
+          src={home1}
+          alt="guy with camera"
+        />
       </StyledImage>
     </StyledLayout>
   );
