@@ -11,7 +11,12 @@ import goodtimes from '../assets/img/goodtimes-small.png';
 
 //Animations
 import { motion } from 'framer-motion';
-import { pageAnimation } from '../utils/animations';
+import {
+  pageAnimation,
+  fadeAnimation,
+  photoAnimation,
+  lineAnimation,
+} from '../utils/animations';
 
 const OurWork = () => {
   return (
@@ -22,10 +27,12 @@ const OurWork = () => {
       exit="exit"
     >
       <StyledMovie>
-        <h2>The athlete</h2>
-        <div className="line"></div>
+        <motion.h2 variants={fadeAnimation}>The athlete</motion.h2>
+        <motion.div variants={lineAnimation} className="line"></motion.div>
         <Link to="/work/the-athlete">
-          <img src={athlete} alt="Athlete" />
+          <Hide>
+            <motion.img variants={photoAnimation} src={athlete} alt="Athlete" />
+          </Hide>
         </Link>
       </StyledMovie>
       <StyledMovie>
@@ -60,7 +67,7 @@ const StyledMovie = styled.div`
   padding-bottom: 10rem;
   .line {
     height: 0.5rem;
-    background: #cccccc;
+    background: #23d997;
     margin-bottom: 3rem;
   }
   img {
@@ -68,6 +75,10 @@ const StyledMovie = styled.div`
     height: 70vh;
     object-fit: cover;
   }
+`;
+
+const Hide = styled.div`
+  overflow: hidden;
 `;
 
 export default OurWork;
