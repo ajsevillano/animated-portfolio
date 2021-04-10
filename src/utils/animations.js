@@ -50,3 +50,20 @@ export const lineAnimation = {
     transition: { duration: 1 },
   },
 };
+
+export const sliderAnimation = {
+  hidden: {
+    x: '-130%',
+    skew: '45deg',
+  },
+  show: {
+    x: '100%',
+    skew: '0deg',
+    transition: { ease: 'easeOut', duration: 1 },
+  },
+};
+
+export const sliderContainer = {
+  hidden: { opacity: 1 },
+  show: { opacity: 1, transition: { staggerChildren: 0.1, ease: 'easeOut' } },
+};

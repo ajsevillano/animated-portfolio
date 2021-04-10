@@ -16,6 +16,8 @@ import {
   fadeAnimation,
   photoAnimation,
   lineAnimation,
+  sliderAnimation,
+  sliderContainer,
 } from '../utils/animations';
 
 const OurWork = () => {
@@ -26,6 +28,12 @@ const OurWork = () => {
       animate="show"
       exit="exit"
     >
+      <motion.div variants={sliderContainer}>
+        <FrameAnimation1 variants={sliderAnimation}></FrameAnimation1>
+        <FrameAnimation2 variants={sliderAnimation}></FrameAnimation2>
+        <FrameAnimation3 variants={sliderAnimation}></FrameAnimation3>
+        <FrameAnimation4 variants={sliderAnimation}></FrameAnimation4>
+      </motion.div>
       <StyledMovie>
         <motion.h2 variants={fadeAnimation}>The athlete</motion.h2>
         <motion.div variants={lineAnimation} className="line"></motion.div>
@@ -79,6 +87,30 @@ const StyledMovie = styled.div`
 
 const Hide = styled.div`
   overflow: hidden;
+`;
+
+const FrameAnimation1 = styled(motion.div)`
+  position: fixed;
+  left: 0;
+  top: 10%;
+  width: 100%;
+  height: 100vh;
+  background-color: #fffebf;
+  z-index: 2;
+`;
+
+//Slider animation
+
+const FrameAnimation2 = styled(FrameAnimation1)`
+  background-color: #ff8efb;
+`;
+
+const FrameAnimation3 = styled(FrameAnimation1)`
+  background-color: #8ed2ff;
+`;
+
+const FrameAnimation4 = styled(FrameAnimation1)`
+  background-color: #8eff80;
 `;
 
 export default OurWork;
