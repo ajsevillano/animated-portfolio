@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { StyledLayout } from '../../styles';
+import Toggle from '../../components/Toggle/Index';
 
 const FaqSection = () => {
   return (
@@ -7,8 +8,17 @@ const FaqSection = () => {
       <h2>
         Any questions <span>FAQ</span>
       </h2>
-      <div className="question">
-        <h4>How do I start</h4>
+      <Toggle title="How do I start">
+        <div className="answer">
+          <p>Lorem ipsum dolor sit amet.</p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+            eligendi ullam tempora quae suscipit veritatis libero laboriosam eos
+            voluptas incidunt.
+          </p>
+        </div>
+      </Toggle>
+      <Toggle title="Daily Schedule">
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
@@ -16,10 +26,8 @@ const FaqSection = () => {
             sunt!
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Daily Schedule</h4>
+      </Toggle>
+      <Toggle title="Different payment methods">
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
@@ -27,10 +35,8 @@ const FaqSection = () => {
             sunt!
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>Different payment methods</h4>
+      </Toggle>
+      <Toggle title="What products do you offer">
         <div className="answer">
           <p>Lorem ipsum dolor sit amet.</p>
           <p>
@@ -38,19 +44,7 @@ const FaqSection = () => {
             sunt!
           </p>
         </div>
-        <div className="faq-line"></div>
-      </div>
-      <div className="question">
-        <h4>What products do you offer</h4>
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
-            sunt!
-          </p>
-        </div>
-        <div className="faq-line"></div>
-      </div>
+      </Toggle>
     </StyledFaq>
   );
 };
