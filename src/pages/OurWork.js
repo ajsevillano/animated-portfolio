@@ -23,6 +23,8 @@ import {
 //Custom hooks
 import { useScroll } from '../utils/useScroll';
 
+import ScrollTop from '../utils/ScrollTop';
+
 const OurWork = () => {
   const [element, controls] = useScroll();
   const [element2, controls2] = useScroll();
@@ -72,6 +74,7 @@ const OurWork = () => {
           <img src={goodtimes} alt="Good times" />
         </Link>
       </StyledMovie>
+      <ScrollTop />
     </StyledOurWork>
   );
 };
