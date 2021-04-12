@@ -9,9 +9,18 @@ import teamwork from '../../assets/img/teamwork.svg';
 import { StyledLayout, StyledDescription, StyledImage } from '../../styles';
 import styled from 'styled-components';
 
+import { fadeAnimation } from '../../utils/animations';
+import { useScroll } from '../../utils/useScroll';
+
 const ServicesSection = () => {
+  const [element, controls] = useScroll();
   return (
-    <StyledServices>
+    <StyledServices
+      variants={fadeAnimation}
+      animate={controls}
+      initial={'hidden'}
+      ref={element}
+    >
       <StyledDescription>
         <h2>
           High <span>quality</span>services
