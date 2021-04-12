@@ -9,43 +9,45 @@ const FaqSection = () => {
       <h2>
         Any questions <span>FAQ</span>
       </h2>
-      <Toggle title="How do I start">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-            eligendi ullam tempora quae suscipit veritatis libero laboriosam eos
-            voluptas incidunt.
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="Daily Schedule">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
-            sunt!
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="Different payment methods">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
-            sunt!
-          </p>
-        </div>
-      </Toggle>
-      <Toggle title="What products do you offer">
-        <div className="answer">
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
-            sunt!
-          </p>
-        </div>
-      </Toggle>
+      <AnimateSharedLayout>
+        <Toggle title="How do I start">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
+              eligendi ullam tempora quae suscipit veritatis libero laboriosam
+              eos voluptas incidunt.
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Daily Schedule">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
+              sunt!
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="Different payment methods">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
+              sunt!
+            </p>
+          </div>
+        </Toggle>
+        <Toggle title="What products do you offer">
+          <div className="answer">
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima,
+              sunt!
+            </p>
+          </div>
+        </Toggle>
+      </AnimateSharedLayout>
     </StyledFaq>
   );
 };
