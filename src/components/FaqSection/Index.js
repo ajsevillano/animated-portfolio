@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import { StyledLayout } from '../../styles';
 import Toggle from '../../components/Toggle/Index';
+import { AnimateSharedLayout } from 'framer-motion';
 
 const FaqSection = () => {
   return (

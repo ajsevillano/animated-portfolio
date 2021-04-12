@@ -11,7 +11,7 @@ import { pageAnimation } from '../utils/animations';
 const MovieDetails = () => {
   const History = useHistory();
   const url = History.location.pathname;
-  const [movies, setMovies] = useState(MovieData);
+  const [movies] = useState(MovieData);
   const [movie, setMovie] = useState(null);
 
   useEffect(() => {
