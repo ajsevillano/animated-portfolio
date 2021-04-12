@@ -57,11 +57,19 @@ const HeadLine = styled.div`
   min-height: 90vh;
   padding-top: 20vh;
   position: relative;
+
   h2 {
     position: absolute;
     top: 10%;
     left: 50%;
     transform: translate(-50%, -10%);
+  }
+
+  @media (max-width: 1300px) {
+    h2 {
+      text-align: center;
+      top: 5%;
+    }
   }
   img {
     width: 100%;
@@ -76,7 +84,7 @@ const StyledAwards = styled.div`
   margin: 5rem 10rem;
   align-items: center;
   justify-content: space-around;
-  @media (max-width: 1300px) {
+  @media (max-width: 1500px) {
     display: block;
     margin: 2rem 2rem;
   }
