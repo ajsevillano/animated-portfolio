@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { useLocation } from 'react-router-dom';
-import { useWindowSize } from '../../utils/useWindowSize';
+import { useWindowSize } from '../../utils/hooks/useWindowSize';
 
 const Navigation = () => {
   const { pathname } = useLocation();

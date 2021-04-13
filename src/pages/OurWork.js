@@ -21,7 +21,7 @@ import {
 } from '../utils/animations';
 
 //Custom hooks
-import { useScroll } from '../utils/useScroll';
+import { useScroll } from '../utils/hooks/useScroll';
 
 import ScrollTop from '../utils/ScrollTop';
 

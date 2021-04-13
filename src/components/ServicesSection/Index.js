@@ -10,7 +10,7 @@ import { StyledLayout, StyledDescription, StyledImage } from '../../styles';
 import styled from 'styled-components';
 
 import { fadeAnimation } from '../../utils/animations';
-import { useScroll } from '../../utils/useScroll';
+import { useScroll } from '../../utils/hooks/useScroll';
 
 const ServicesSection = () => {
   const [element, controls] = useScroll();
