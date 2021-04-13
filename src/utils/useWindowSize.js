@@ -20,5 +20,5 @@ export const useWindowSize = () => {
       window.removeEventListener('resize', handleResize);
     };
   });
-  return [windowSize, setWindowSize];
+  return [windowSize];
 };

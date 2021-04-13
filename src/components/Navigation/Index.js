@@ -8,6 +8,12 @@ const Navigation = () => {
   const { pathname } = useLocation();
   const [windowSize] = useWindowSize();
 
+  const variants = {
+    mobile: { width: '100%' },
+    others: { width: '40%' },
+    none: { width: '0%' },
+  };
+
   return (
     <StyledNav>
       <h1>
@@ -19,25 +25,46 @@ const Navigation = () => {
         <li>
           <Link to="/">1. About Us</Link>
           <HoverLine
+            variants={variants}
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/' ? '40%' : '0%' }}
+            animate={
+              pathname === '/'
+                ? windowSize.width <= 1300
+                  ? 'mobile'
+                  : 'others'
+                : 'none'
+            }
           />
         </li>
         <li>
           <Link to="/work">2. Our Work</Link>
           <HoverLine
+            variants={variants}
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/work' ? '40%' : '0%' }}
+            animate={
+              pathname === '/work'
+                ? windowSize.width <= 1300
+                  ? 'mobile'
+                  : 'others'
+                : 'none'
+            }
           />
         </li>
         <li>
           <Link to="/contact">3. Contact Us</Link>
           <HoverLine
+            variants={variants}
             transition={{ duration: 0.75 }}
             initial={{ width: '0%' }}
-            animate={{ width: pathname === '/contact' ? '40%' : '0%' }}
+            animate={
+              pathname === '/contact'
+                ? windowSize.width <= 1300
+                  ? 'mobile'
+                  : 'others'
+                : 'none'
+            }
           />
         </li>
       </ul>
