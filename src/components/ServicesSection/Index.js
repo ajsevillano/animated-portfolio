@@ -6,7 +6,11 @@ import money from '../../assets/img/money.svg';
 import teamwork from '../../assets/img/teamwork.svg';
 
 //Styles
-import { StyledLayout, StyledDescription, StyledImage } from '../../styles';
+import {
+  StyledLayout,
+  StyledDescription,
+  StyledImage,
+} from '../../styles/otherStyles';
 import styled from 'styled-components';
 
 import { fadeAnimation } from '../../utils/animations';

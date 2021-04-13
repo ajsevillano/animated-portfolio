@@ -14,7 +14,7 @@ import {
   StyledDescription,
   StyledImage,
   StyledHide,
-} from '../../styles';
+} from '../../styles/otherStyles';
 
 //Components
 import Wave from '../../components/Wave';

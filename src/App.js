@@ -6,7 +6,7 @@ import Navigation from './components/Navigation/Index';
 import MovieDetails from './pages/MovieDetails';
 
 //Global styled
-import GlobalStyle from './components/GlobalStyled';
+import GlobalStyle from './styles/GlobalStyled';
 
 //Router
 import { Switch, Route, useLocation } from 'react-router-dom';
