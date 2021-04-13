@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useHistory } from 'react-router-dom';
-import MovieData from '../MovieData';
+import MovieData from '../assets/data/MovieData';
 import Award from '../components/Award/Index';
 
 //Animations
