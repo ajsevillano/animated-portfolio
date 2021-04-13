@@ -17,7 +17,7 @@ import {
 } from '../../styles/otherStyles';
 
 //Components
-import Wave from '../../components/Wave';
+import Wave from '../Wave/Index';
 
 const AboutSection = () => {
   return (
